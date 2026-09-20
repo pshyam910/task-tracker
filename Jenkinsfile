@@ -4,6 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
         IMAGE_NAME = 'pshyam910/task-tracker'
+        KUBECONFIG = '/var/lib/jenkins/.kube/config'
     }
 
     stages {
